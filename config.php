@@ -39,7 +39,7 @@ if (!defined("ROOT_URL_QUIZ")) {
     define("ROOT_URL_QUIZ", $root_url);
 }
 if (!defined("ROOT_URL_LEVEL")) {
-    $root_url = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/kids-quiz/quiz/index.php?level=';
+    $root_url = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/kids-quiz/quiz/index.php?quiz=';
     define("ROOT_URL_LEVEL", $root_url);
 }
 

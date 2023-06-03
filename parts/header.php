@@ -37,5 +37,9 @@
     ?>
     <title>Divine Uk Quiz</title>
 </head>
-
+    <?php
+    //classes
+    require_once ROOT_PATH_CLASS .'class.quiz.php';
+    $quiz = new Quiz;
+    ?>
 <body>
