@@ -26,6 +26,7 @@ if ($questions_and_answers->num_rows > 0) {
                     $options_array = explode(',',$options);
                     $option_count = 0 ;
                     foreach($options_array as $option){
+                        if(!empty($option)){
                         ?>
                         <div class="" data-optCount = "<?php echo $option_count = $option_count + 1 ?>">
                             <div>
@@ -35,6 +36,7 @@ if ($questions_and_answers->num_rows > 0) {
                             </div>
                         </div>
                         <?php
+                    }
                     }
                     ?>
                 </div>
