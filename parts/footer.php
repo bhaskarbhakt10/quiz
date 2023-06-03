@@ -25,6 +25,16 @@
     }
     ?>
 
+    <!-- //php js scripts  -->
+    <?php
+    $php_js = scandir(ROOT_PATH . 'assets/php-js-scripts');
+    unset($php_js[0]);
+    unset($php_js[1]);
+    foreach ($php_js as $js) {
+        require_once ROOT_PATH . 'assets/php-js-scripts/' . $js ;
+    }
+    ?>
+
 </footer>
 </body>
 
