@@ -13,6 +13,9 @@ if (!defined("ROOT_PATH_DBTABLES")) {
 if (!defined("ROOT_PATH_CLASS")) {
     define("ROOT_PATH_CLASS", $_SERVER['DOCUMENT_ROOT'] . '/kids-quiz/controller/');
 }
+if (!defined("ROOT_PATH_PARTS")) {
+    define("ROOT_PATH_PARTS", $_SERVER['DOCUMENT_ROOT'] . '/kids-quiz/parts/');
+}
 //paths
 
 //urls
@@ -30,3 +33,5 @@ if (!defined("ASSETS_URL")) {
     $root_url = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/kids-quiz/assets/';
     define("ASSETS_URL", $root_url);
 }
+
+echo "test";
