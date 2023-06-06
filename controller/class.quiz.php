@@ -14,10 +14,38 @@ class Quiz
 
     public function get_questions_by_level($level)
     {
-        $sql = "SELECT Question,Options FROM " . QUIZ_Q_AND_A . " WHERE Level = $level";
+        $sql = "SELECT Question_ID,Question,Options FROM " . QUIZ_Q_AND_A . " WHERE Level = $level";
+        $res = $this->db->connect()->query($sql);
+        if (!empty($res)) {
+            return $res;
+        }
+    }
+
+    private function get_question_answer_by_id($id)
+    {
+        $sql = "SELECT * FROM " . QUIZ_Q_AND_A . " WHERE Question_ID=" . $id;
         $res = $this->db->connect()->query($sql);
         if(!empty($res)){
             return $res;
         }
     }
+
+    public function check_answer_is_correct($id, $selected_option){
+        $result = $this->get_question_answer_by_id($id);
+        $correct_ans = array();
+        if(!empty($result) && $result->num_rows > 0){
+            while($row = $result->fetch_assoc()){
+                if($row['Correct_Answer'] === $selected_option ){
+                    return true;
+                }
+                else{
+                    $correct_ans['correct_option'] = $row['Correct_Answer'];
+                    $correct_ans['explaination'] = $row['Explanations'];
+                }
+            }
+        }
+        return $correct_ans;
+
+    }
+
 }

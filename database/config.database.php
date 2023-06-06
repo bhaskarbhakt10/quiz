@@ -9,8 +9,8 @@ class Database
     private $database = "quiz";
     //stagging 
     // private $username = "u595440997_divine_quiz";
-    // private $password = "u595440997_divine_quiz";
-    // private $database = "iqbCb\$V34eu9i-P";
+    // private $password = "iqbCb\$V34eu9i-P";
+    // private $database = "u595440997_divine_quiz";
 
 
     private $conn_string;
