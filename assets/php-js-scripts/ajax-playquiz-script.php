@@ -82,7 +82,7 @@ require_once  dirname(__FILE__, 3) . '/config.php';
                     $('#correction_div').append(correction_payload);
                 } else {
                     // if ($('#next_question').length !== 0) {
-                        $('[data-questionid=' + question_id + ']').closest('form').find('.quiz-container').append("<div class='next_question' id='next_question'><button class='btn btn-outline-primary next_question_btn'><i class='fa fa-arrow-right'></i></button></div>");
+                        $('[data-questionid=' + question_id + ']').closest('form').find('.quiz-container .buttons_wrap').append("<div class='next_question' id='next_question'><button class='btn btn-outline-primary next_question_btn'><i class='fa fa-arrow-right'></i></button></div>");
                     // }
                 }
             },
