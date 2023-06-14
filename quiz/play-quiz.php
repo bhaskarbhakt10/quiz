@@ -7,6 +7,7 @@ if (!array_key_exists('level', $_GET) || !array_key_exists('HTTP_REFERER', $_SER
     $level = (int)$_GET['level'];
     $questions_and_answers = $quiz->get_questions_by_level($level);
 }
+
 ?>
 <div class="main main-play-area">
     <?php
