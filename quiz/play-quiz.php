@@ -89,7 +89,7 @@ if (!array_key_exists('level', $_GET) || !array_key_exists('HTTP_REFERER', $_SER
                     </div>
                 </div>
                 <div class="duk-website row">
-                    <a href="www.divineuk.org">divineuk</a>
+                    <a href="www.divineuk.org">www.divineuk.org</a>
                 </div>
             </div>
                 </div>

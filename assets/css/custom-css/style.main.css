@@ -64,7 +64,7 @@ body{
 }
 
 .option_value label {
-  padding-block: 12px;
+  padding-block: 4px;
   padding-inline: 40px;
   margin-bottom: 10px;
   background-color: #67828985;
@@ -163,7 +163,7 @@ input[type="checkbox"]::before {
   max-width: 550px;
   margin: auto;
   padding: 0 1.5em;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .w-80 {
@@ -192,14 +192,12 @@ form {
 
 /* select-leval css start */
 .select-level-wrapper{
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   align-items: flex-start;
   place-content: center;
 }
-.levels-wrapper{
-  /* margin-top: 30px; */
-}
+
 .quiz-level-btn{
   text-align: center;
 }
@@ -250,10 +248,18 @@ form {
   }
 
   .quiz-jesus-img img {
-    width: 10%;
+    width: 15%;
   }
   .quiz-jesus-img::before{
     width: 80px;
     height: 80px;
+  }
+  .question h2{
+    font-size: 25px;
+  }
+  .option_value label{
+    font-size: 18px;
+  padding-block: 12px;
+
   }
 }
