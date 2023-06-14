@@ -1,3 +1,8 @@
+body{
+  background: linear-gradient(180deg, #a1d0e4, #cee1dd);
+  background-repeat:no-repeat ;
+  font-family: "EBGaramond";
+}
 .main {
   background-image: url(../../../assets/images/bg.png);
   background-size: cover;
@@ -29,6 +34,7 @@
   font-size: 18px;
   color: #fff;
   margin: 0;
+  font-family: "EBGaramond";
 }
 
 .option_value_inner {
@@ -66,14 +72,18 @@
   display: block;
 }
 
+.option_value label{
+  /* background-color: #223031; */
+  cursor: pointer;
+}
 .option_value label:hover {
   background-color: #223031;
 }
 
-.option_value span,
 .option_value label {
   color: #fff;
   font-size: 15px;
+  font-family: "EBGaramond";
 }
 
 .quiz-jesus-img {
@@ -95,6 +105,9 @@
 }
 .form-check-input:checked:focus,.form-check-input:checked{
   border-color: #fff;
+}
+.quiz-container .correction_div{
+  color: red;
 }
 .quiz-jesus-img::before {
   position: absolute;
@@ -177,6 +190,30 @@ form {
   }
 /* } */
 
+/* select-leval css start */
+.select-level-wrapper{
+  height: 100vh;
+  display: grid;
+  align-items: flex-start;
+  place-content: center;
+}
+.levels-wrapper{
+  /* margin-top: 30px; */
+}
+.quiz-level-btn{
+  text-align: center;
+}
+.quiz-level-btn a{
+  font-family: "EBGaramond";
+  font-size: 18px;
+  transition: 0.5s;
+  font-weight: 400;
+}
+.quiz-level-btn a:hover {
+  scale: 1.1;
+}
+/* select-leval css start */
+
 @media only screen and (min-width:767px) {
   .main-play-area {
     max-width: 700px;
@@ -213,6 +250,10 @@ form {
   }
 
   .quiz-jesus-img img {
-    width: 30%;
+    width: 10%;
+  }
+  .quiz-jesus-img::before{
+    width: 80px;
+    height: 80px;
   }
 }

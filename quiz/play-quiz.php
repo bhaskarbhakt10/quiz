@@ -57,7 +57,7 @@ if (!array_key_exists('level', $_GET) || !array_key_exists('HTTP_REFERER', $_SER
                                                                 <span><?php echo chr(65 + $option_count - 1); ?>. </span>
                                                                 <input class="form-check-input mx-0 my-0 checkbox" type="checkbox" name="question_<?php echo $count; ?>" id="<?php echo $option; ?>" value="<?php echo $option; ?>" data-value="<?php echo chr(65 + $option_count - 1); ?>" <?php echo ($option_count === 1) ? 'required' : ''; ?>>
                                                             </div>
-                                                            <label for="<?php echo $option; ?>"><?php echo $option ?></label>
+                                                            <label class="checkbox-label" for="<?php echo $option; ?>"><?php echo $option ?></label>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -94,3 +94,25 @@ if (!array_key_exists('level', $_GET) || !array_key_exists('HTTP_REFERER', $_SER
                 </div>
 </div>
 </form>
+
+
+<script>
+    let checkbox = document.querySelectorAll('.checkbox');
+    for (let index = 0; index < checkbox.length; index++) {
+        const element = checkbox[index];
+
+        element.addEventListener('change', function() {
+        if (element.checked) {
+            let closest_container=element.parentNode;
+            let target_label=closest_container.querySelector('.checkbox-label');
+            console.log(target_label);
+            element.style.backgroundColor = 'red'; // Change to your desired background color
+        } else {
+            element.style.backgroundColor = ''; // Reset the background color
+        }
+    });
+        
+    }
+
+  
+</script>
