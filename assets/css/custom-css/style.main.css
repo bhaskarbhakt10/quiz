@@ -25,8 +25,9 @@ body{
 .question {
   background-color: #223031;
   border-radius: 20px;
-  padding: 20px 0;
+  padding: 20px 15px;
   margin-bottom: 25px;
+  line-height: 1.4;
 }
 
 .question h2 {
@@ -48,6 +49,7 @@ body{
 
 .option_value label {
   padding-top: 40px;
+  line-height: 1.4;
 }
 
 .option_value .checkbox-container {
@@ -177,7 +179,7 @@ form {
 /* @media only screen and (max-width:600px) { */
   #play-quiz-main {
     display: flex;
-    height: 100%;
+    min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -206,10 +208,13 @@ form {
   font-size: 18px;
   transition: 0.5s;
   font-weight: 400;
+  line-height: 1.4;
+  margin: 10px 0;
 }
 .quiz-level-btn a:hover {
   scale: 1.1;
 }
+
 /* select-leval css start */
 
 @media only screen and (min-width:767px) {
