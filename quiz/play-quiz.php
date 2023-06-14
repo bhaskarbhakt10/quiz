@@ -93,27 +93,5 @@ if (!array_key_exists('level', $_GET) || !array_key_exists('HTTP_REFERER', $_SER
                 </div>
             </div>
                 </div>
+            </form>
 </div>
-</form>
-
-
-<script>
-    let checkbox = document.querySelectorAll('.checkbox');
-    for (let index = 0; index < checkbox.length; index++) {
-        const element = checkbox[index];
-
-        element.addEventListener('change', function() {
-        if (element.checked) {
-            let closest_container=element.parentNode;
-            let target_label=closest_container.querySelector('.checkbox-label');
-            console.log(target_label);
-            element.style.backgroundColor = 'red'; // Change to your desired background color
-        } else {
-            element.style.backgroundColor = ''; // Reset the background color
-        }
-    });
-        
-    }
-
-  
-</script>
