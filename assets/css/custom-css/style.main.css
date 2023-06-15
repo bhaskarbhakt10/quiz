@@ -3,6 +3,9 @@ body{
   background-repeat:no-repeat ;
   font-family: "EBGaramond";
 }
+p{
+  margin: 0;
+}
 .main {
   background-image: url(../../../assets/images/bg.png);
   background-size: cover;
@@ -214,6 +217,38 @@ form {
 .quiz-level-btn a:hover {
   scale: 1.1;
 }
+.mobile-popup {
+  position: absolute;
+  right: -8px;
+  top: -10px;
+  background-color: #adadad;
+  border-radius: 50%;
+  background-size: 40%;
+  z-index: 99;
+}
+.btn-primary,.btn-primary.focus, .btn-primary:focus, .btn-primary:hover,.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active,.btn-outline-primary {
+  background-color: #fbc200;
+  color: #fff;
+  box-shadow: 4px 4px 6px 0px #7a1c00;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border: 1px solid #fbc200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* select-leval css start */
 
