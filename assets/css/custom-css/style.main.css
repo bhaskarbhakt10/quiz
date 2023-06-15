@@ -234,9 +234,9 @@ form {
   letter-spacing: 1px;
   border: 1px solid #fbc200;
 }
-
-
-
+.checkbox-label.selected{
+  background-color: #223031;
+}
 
 
 
